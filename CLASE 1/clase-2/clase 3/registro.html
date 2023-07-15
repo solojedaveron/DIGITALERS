@@ -3,6 +3,42 @@
 
 <head>
     <title>Formulario De Registro</title>
+    <style>
+        /* input{
+            display: block;
+        }*/
+
+        header {
+            background-color: palevioletred;
+            color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        form {
+            background-color: bisque;
+            width: 40%;
+            margin: auto;
+            padding: 2em;
+            margin-top: 1em;
+            border-radius: 15px;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75)
+        }
+        input{
+            width: 100%;
+            border-radius: 2px;
+        }
+        select{
+            width: 100%;
+            border-radius: 2px;
+        }
+        html {
+            background-color: lightpink;
+        }
+    </style>
 </head>
 
 <body>
@@ -11,12 +47,60 @@
         <h2>Registro Para Crear Un Usuario Nuevo</h2>
     </header>
     <main>
- <form>
-     Nombre:
-   <input type="text">
-     Apellido:
-     <input type="text">
- </form>
+        <form method="gets">
+            <div>
+                <div>
+                    <label for="txtNombre">Nombre:</label>
+                    <div> <input type="text" id="txtNombre" name="nombre" required pattern=""
+                            placeholder="Ingrese su nombre">
+                    </div>
+                </div>
+                <div>
+                    <label for="txtApellido"></label>Apellido:</label>
+                    <div><input type="text" id="txtApellido" name="apellido" required></div>
+                </div>
+                <div>
+                    <label for="txtFechadeNacimiento">Fecha de Nacimiento</label>
+                    <div><input type="date" id="txtFechadeNacimiento" name="fechadenacimiento" required /></div>
+                </div>
+                <div>
+                    <div>
+                        <label for="txtDocumento">Documento:</label>
+                        <div><input type="number" id="txtDocumento" name="documento" required min="1000000"
+                                max="60000000"></div>
+                    </div>
+                    <div>
+                        <label for="cmbPais">Pais</label>
+                        <div>
+                            <select>
+                                <option>Seleccione un pais..</option>
+                                <option>Argentina</option>
+                                <option>Uruguay</option>
+                                <option>Brasil</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="txtEmail">Email</label>
+                        <div><input type="email" id="txtEmail" name="email"></div>
+                    </div>
+                    <label for="textPassword">Password:</label>
+                    <div><input type="password" id="textPassword" name="password" required></div>
+                </div>
+                <div>
+                    <div>
+                        <label for="txtVerificacionPassword">Verificar Password:</label>
+                        <div> <input type="password" id="txtVerificacionPassword" name="verificapassword" required
+                                minlength="8" maxlength="15"></div>
+                    </div>
+                </div>
+                <div>
+                    <label>Acepto terminos y condiciones</label>
+                    <input type="checkbox" id="chkAcepto terminos y condiciones" name="aceptoterminosycondiciones">
+                </div>
+                <button>Enviar Formulario</button>
+
+        </form>
     </main>
 
     <footer>
