@@ -1,0 +1,54 @@
+header {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    width: 80%;
+    margin: auto
+}
+
+table,
+td,
+th {
+    border: 1px solid rgb(5, 3, 17);
+    border-collapse: collapse;
+}
+
+/* > son los hijitos de */
+thead>tr>th {
+    padding: 1em;
+}
+
+/* pseudoclases */
+thead>tr>th:first-child {
+    background-color: #130758;
+}
+
+thead>tr>th {
+    background-color: #7f6694;
+}
+
+table>tbody>tr:last-child>td {
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(69, 42, 104);
+    font-size: 1.5em;
+}
+
+table>tbody>tr:first-child>td:first-child {
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+/* todos los td menos el primero*/
+td:not(:first-child) {
+    text-align: center;
+}
+tr{
+    background-color: #beaeca;
+}
+html{
+    background-color: lightpink;
+}
